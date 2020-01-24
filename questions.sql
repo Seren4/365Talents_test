@@ -43,7 +43,6 @@ INNER JOIN Invoice ON InvoiceLine.InvoiceId = Invoice.InvoiceId
 INNER JOIN Customer ON Invoice.CustomerID=(select CustomerId from Customer where FirstName="Victor" AND LastName="Stevens")
 GROUP BY Track.TrackId) as item group by Composer order by count(Composer) DESC LIMIT 1;
 
-
 -- -- Invoice.InvoiceId list for user = Victor Stevens
 -- SELECT DISTINCT Invoice.InvoiceId FROM Invoice
 -- INNER JOIN Customer ON Invoice.CustomerID=(select CustomerId from Customer where FirstName="Victor" AND LastName="Stevens")
