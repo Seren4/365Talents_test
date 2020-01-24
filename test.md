@@ -8,12 +8,6 @@ SQL
     Quel est le total facturé par l'entreprise à chaque client ?
     Quels sont les artistes favoris de Victor Stevens ? Quel est l'artiste favori de Victor Stevens ?
 
-Informations pratiques :
-
-    La base de données d'exemple Chinook est disponible ici : https://github.com/lerocha/chinook-database
-    Pour simplifier l'installation, tu peux utiliser le client SQLiteStudio (https://sqlitestudio.pl) et 
-    la base de données SQLite directement disponible sur le site de Chinook.
-
 Scripting
 
     Depuis la base de données Chinook, tu exporteras via le moyen de ton choix la table Track au format CSV, puis 

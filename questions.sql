@@ -17,10 +17,8 @@ select Invoice.CustomerId, Customer.FirstName, Customer.LastName, sum(Invoice.To
 INNER JOIN Customer ON Invoice.CustomerId = Customer.CustomerId
 group by CustomerId ORDER BY sum(Total) DESC limit 1;
 
--- Quel est le total facturé par l'entreprise à chaque client ?
--- select CustomerId, sum(Total) from Invoice group by CustomerId;
--- with details:
 \! echo "\nQuel est le total facturé par l'entreprise à chaque client ?\n";
+-- select CustomerId, sum(Total) from Invoice group by CustomerId;
 
 select  Invoice.CustomerId, Customer.LastName, Customer.FirstName, sum(Invoice.Total) from Invoice
 INNER JOIN Customer ON Invoice.CustomerId=Customer.CustomerId group by CustomerId order by sum(Invoice.Total) desc;
